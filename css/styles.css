@@ -8,6 +8,7 @@
   --background-color-light: #f5f4fa;
   --background-color-dark: #2f303a;
   --border-color: #eeeeee;
+  --icon-color: #afb1b8;
   --font-primary: "Roboto", sans serif;
   --font-secondary: "Raleway";
 }
@@ -60,7 +61,8 @@ body {
   justify-content: space-between;
   align-items: center;
   justify-content: flex-end;
-  padding-left: 270px;
+  padding-left: 220px;
+  gap: 30px;
 }
 .logo {
   font-family: var(--font-secondary);
@@ -98,10 +100,14 @@ body {
 }
 .contact-primary {
   color: var(--color-light-secondary);
-  padding-left: 50px;
+  padding-left: 10px;
 }
 .offer-background {
   background-color: var(--background-color-dark);
+  background: rgba(47, 48, 58, 0.4);
+  background-image: url(./images/people-main.jpg);
+  max-width: 1600px;
+  height: 600px;
 }
 .offer {
   font-weight: 900;
@@ -152,6 +158,7 @@ body {
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
+  padding-top: 30px;
   padding-bottom: 10px;
 }
 p {
@@ -160,6 +167,12 @@ p {
 .description-primary {
   font-size: 14px;
   line-height: 1.7;
+}
+.icon-primary {
+  background-color: var(--background-color-light);
+  padding: 25px 100px 25px 100px;
+  display: flex;
+  justify-content: center;
 }
 .section-secondary {
   padding-bottom: 94px;
@@ -208,7 +221,7 @@ p {
   padding: 30px 0 10px 0;
 }
 .function {
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 .card-set-types {
   display: flex;
@@ -217,10 +230,65 @@ p {
   justify-content: center;
   padding-bottom: 50px;
 }
+.icon-social-box {
+  display: flex;
+  gap: 10px;
+  padding-left: 32px;
+  padding-bottom: 30px;
+}
+.icon-social-media {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: var(--color-light);
+}
+.icon-social-media:hover {
+  --color-light: var(--color-active);
+  border-radius: 50%;
+}
+.icon-social {
+  fill: var(--icon-color);
+}
+.icon-social:hover {
+  fill: var(--color-light);
+}
+.clients-box {
+  display: flex;
+  justify-content: space-between;
+}
+.icon-clients {
+  box-sizing: border-box;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  fill: var(--icon-color);
+}
+.icon-clients:hover {
+  --icon-color: var(--color-active);
+}
+.icon-clients-secondary {
+  fill: var(--icon-color);
+}
+.icon-clients-secondary:hover {
+  --icon-color: var(--color-active);
+}
 .button-active {
   padding: 6px 22px 6px 22px;
   border: none;
   border-radius: 4px;
+}
+.item-types:hover,
+.item-types:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .card-set-projects {
   display: flex;
@@ -230,6 +298,12 @@ p {
 .item-projects {
   flex-basis: calc((100% - 60px) / 3);
   border: 1px solid #eeeeee;
+}
+.item-projects:hover,
+.item-projects:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 .name-of-the-project {
   font-weight: 700;
@@ -246,6 +320,13 @@ p {
 .bottom {
   padding: 60px 0;
   background: var(--background-color-dark);
+}
+.container-bottom {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
 }
 .logo-bottom {
   font-family: var(--font-secondary);
@@ -270,4 +351,37 @@ address {
 }
 .contact-bottom {
   padding-bottom: 9px;
+}
+.join {
+  padding-left: 70px;
+  padding-top: 12px;
+}
+.join-style {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-light);
+  padding-bottom: 20px;
+}
+.join-box {
+  display: flex;
+  gap: 10px;
+}
+.join-social-media {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.join-social-media:hover {
+  background: var(--color-active);
+}
+.join-social {
+  fill: var(--color-light);
 }
