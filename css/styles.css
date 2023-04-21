@@ -63,6 +63,13 @@ body {
   justify-content: flex-end;
   padding-left: 220px;
   gap: 30px;
+  cursor: pointer;
+}
+.icon-header {
+  fill: var(--color-light-secondary);
+}
+.icon-header:hover {
+  --color-light-secondary: var(--color-active);
 }
 .logo {
   font-family: var(--font-secondary);
