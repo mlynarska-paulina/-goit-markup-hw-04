@@ -48,8 +48,14 @@ body {
 }
 .box-navigation {
   display: flex;
-  padding: 24px 0 25px 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0 25px;
   column-gap: 46px;
+}
+.box-secondary {
+  display: flex;
+  gap: 93px;
 }
 .box-menu {
   display: flex;
@@ -58,12 +64,13 @@ body {
 }
 .box-contact {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  justify-content: flex-end;
-  padding-left: 220px;
   gap: 30px;
   cursor: pointer;
+}
+.box-contact-secondary {
+  display: flex;
+  align-items: center;
 }
 .icon-header {
   fill: var(--color-light-secondary);
@@ -77,7 +84,6 @@ body {
   font-size: 26px;
   line-height: 1.2;
   color: var(--logo-color);
-  padding-right: 50px;
 }
 .logo-word-primary {
   color: var(--logo-color-dark);
@@ -108,28 +114,28 @@ body {
 .contact-primary {
   color: var(--color-light-secondary);
   padding-left: 10px;
+  display: flex;
+  align-items: center;
 }
 .offer-background {
   background-color: var(--background-color-dark);
   background: rgba(47, 48, 58, 0.4);
-  background-image: url(./images/people-main.jpg);
+  background-image: url(../images/people-main.jpg);
+  background-size: cover;
   max-width: 1600px;
-  height: 600px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 200px;
 }
 .offer {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-light);
   padding: 200px 200px 30px 200px;
-}
-.box-button {
-  padding-bottom: 210px;
-  display: flex;
-  justify-content: center;
 }
 .offer-button {
   background-color: var(--color-active);
@@ -177,7 +183,7 @@ p {
 }
 .icon-primary {
   background-color: var(--background-color-light);
-  padding: 25px 100px 25px 100px;
+  padding: 25px 100px;
   display: flex;
   justify-content: center;
 }
@@ -197,7 +203,7 @@ p {
 }
 .people {
   background: var(--background-color-light);
-  padding: 94px 0;
+  padding: 94px 0px;
 }
 .topic {
   font-weight: 700;
@@ -225,7 +231,7 @@ p {
 }
 .name {
   font-weight: 500;
-  padding: 30px 0 10px 0;
+  padding: 30px 0 10px;
 }
 .function {
   padding-bottom: 16px;
@@ -251,16 +257,18 @@ p {
   align-items: center;
   cursor: pointer;
   background: var(--color-light);
+  fill: var(--icon-color);
 }
 .icon-social-media:hover {
-  --color-light: var(--color-active);
+  background: var(--color-active);
+  --icon-color: var(--color-light);
   border-radius: 50%;
 }
 .icon-social {
   fill: var(--icon-color);
 }
 .icon-social:hover {
-  fill: var(--color-light);
+  --icon-color: var(--color-light);
 }
 .clients-box {
   display: flex;
@@ -288,7 +296,7 @@ p {
   --icon-color: var(--color-active);
 }
 .button-active {
-  padding: 6px 22px 6px 22px;
+  padding: 6px 22px;
   border: none;
   border-radius: 4px;
 }
@@ -333,7 +341,6 @@ p {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: flex-start;
 }
 .logo-bottom {
   font-family: var(--font-secondary);
@@ -349,7 +356,7 @@ address {
   font-size: 14px;
   line-height: 1.7;
   color: var(--color-light);
-  padding: 20px 0 9px 0;
+  padding: 20px 0 9px;
 }
 .contact-secondary {
   font-size: 14px;
