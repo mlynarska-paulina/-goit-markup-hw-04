@@ -203,7 +203,6 @@ p {
 }
 .people {
   background: var(--background-color-light);
-  padding: 94px 0px;
 }
 .topic {
   font-weight: 700;
