@@ -53,10 +53,6 @@ body {
   padding: 24px 0 25px;
   column-gap: 46px;
 }
-.box-secondary {
-  display: flex;
-  gap: 93px;
-}
 .box-menu {
   display: flex;
   column-gap: 46px;
