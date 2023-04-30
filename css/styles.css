@@ -59,8 +59,9 @@ body {
 }
 .box-menu {
   display: flex;
-  justify-content: space-between;
+  column-gap: 46px;
   align-items: center;
+  margin-left: -250px;
 }
 .box-contact {
   display: flex;
@@ -75,7 +76,9 @@ body {
 .icon-header {
   fill: var(--color-light-secondary);
 }
-.icon-header:hover {
+li:hover a,
+li:hover svg {
+  color: var(--color-active);
   --color-light-secondary: var(--color-active);
 }
 .logo {
@@ -109,7 +112,6 @@ body {
 }
 .page {
   color: var(--color-dark);
-  padding-right: 46px;
 }
 .contact-primary {
   color: var(--color-light-secondary);
